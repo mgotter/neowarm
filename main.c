@@ -23,9 +23,19 @@
 
 #include <ti/devices/msp432p4xx/driverlib/driverlib.h>
 
+/* Stack size in bytes */
+#define THREADSTACKSIZE    1024
+
 int main(void)
 {
+    //pthread_attr_t      pAttrs;
+    //struct sched_param  priParam;
+    //struct mq_attr      attr;
+    //int                 retc;
+    //int                 detachState;
 
+    /* Call driver init functions */
+    Board_initGeneral();
 
     return (0);
 }
